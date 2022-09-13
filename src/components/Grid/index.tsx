@@ -111,10 +111,23 @@ function Grid({ cards }: GrindProps) {
         <h1>Jogo da Memória</h1>
         <div className="placar">
           <p>Moves: {moves}</p>
-          <p>Matches: {match}</p>
-          <button type="button" onClick={() => handleReset()}>
-            {validateVictory ? 'Reset' : 'Jogar Novamente'}
-          </button>
+          {validateVictory ? (
+            <button
+              type="button"
+              className="reset"
+              onClick={() => handleReset()}
+            >
+              Reset
+            </button>
+          ) : (
+            <button
+              type="button"
+              className="jogar"
+              onClick={() => handleReset()}
+            >
+              Jogar Novamente
+            </button>
+          )}
         </div>
       </div>
       {validateVictory ? (
