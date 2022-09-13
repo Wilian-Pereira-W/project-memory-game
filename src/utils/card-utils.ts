@@ -18,3 +18,9 @@ export const sortArray = <T>(array: T[]): T[] => {
 export const regenerateCard = (cards: CardProps[]): CardProps[] => {
   return cards.map((card) => ({ ...card, id: keyGen() }));
 };
+
+export const duplicateRegenerateSortArray = (
+  cards: CardProps[],
+): CardProps[] => {
+  return sortArray(regenerateCard(duplicateArray(cards)));
+};
