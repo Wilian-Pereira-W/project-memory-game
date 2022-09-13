@@ -1,0 +1,46 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 2px;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  justify-items: center;
+  height: 650px;
+}
+
+.header {
+  padding: 20px 0;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.placar {
+  display: flex;
+  margin: 15px;
+  justify-content: space-between;
+  width: 550px;
+}
+
+.header h1{
+  color: #FFF;
+  margin: 20px;
+}
+.placar p {
+  font-size: 24px;
+  font-weight: bold;
+  color: #FFF;
+}
+
+.placar button {
+  background: #fff;
+  color: #000;
+  width: 200px;
+  font-size: 24px;
+  border-radius: 20px;
+  font-weight: bold;
+}
