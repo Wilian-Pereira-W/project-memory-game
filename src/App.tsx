@@ -1,9 +1,11 @@
 import './App.css';
+import Grid from './components/Grid';
+import { data } from './data/animal-information';
 
 function App() {
   return (
-    <div className="App">
-      <h1>Olá, mundo</h1>
+    <div className="app">
+      <Grid cards={data} />
     </div>
   );
 }
